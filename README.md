@@ -1,6 +1,37 @@
 # 이재현[201840223]
 <hr/>
 
+## [04월 06일]
+&nbsp = 스페이스기능<br>
+
+### 객체 선언 및 초기화<br>
+let foo = new Array();<br>
+let bar =[];<br>
+foo = [1,10,오렌지];<br>
+bar =[1,10,오렌지];<br>
+<hr>
+### 선언과 동시에 초기화<br>
+let foo = new Array(1,10,오렌지);<br>
+let bar =[1,10,오렌지];<br>
+<hr>
+### 배열의 길이<br>
+console.log(foo.length);<br>
+### push는 배열의 끝에 원하는 값을 추가해주는 함수.<br>
+bar =[0];<br>
+console.log("\n push");<br>
+foo.push("자료구조",1,0.5);<br>
+bar.push(1,2,3);<br>
+console.log(foo);<br>
+<hr>
+### pop은 배열의 마지막 주소에 있는 값을 제거해주는 함수
+console.log("\n pop");
+foo.pop();
+console.log(foo);
+
+console.log(foo.slice(1,5));
+인덱스 4는 범위의 마지막이기 때문에 포함되지않는다.
+즉 마지막 인덱스1에서 4까지만 반환한다.
+
 ## [03월30일]
 <p>
  중첩 조건문 : 여러개가 겹쳐있는 상태 <br>
