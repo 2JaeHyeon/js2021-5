@@ -76,7 +76,7 @@ clearlnterval(아이디)
 ┌─ 익명 함수 생성 후 곧바로 호출 <br>
 (function (){
     console.log(this);
-})();
+})(); <br>
 ┌─ 화살표 함수 생성 후 곧바로 호출 <br>
 (() => {
     console.log(this);
