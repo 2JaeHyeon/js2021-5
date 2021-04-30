@@ -6,65 +6,61 @@
 
 ## [4월 27일]
 스페이스를 적용 X
-배열은 요소에 접근할 때 인덱스를 사용하고, 객체는 키를 사용
-요소 : 배열 내부에 있는 값 하나하나를 뜻한다
-속성 : 객체 내부에 있는 값 하나하나를 뜻한다
+배열은 요소에 접근할 때 인덱스를 사용하고, 객체는 키를 사용<br>
+요소 : 배열 내부에 있는 값 하나하나를 뜻한다<br>
+속성 : 객체 내부에 있는 값 하나하나를 뜻한다<br>
 ### 반복 출력
-for(let product of products){
-product.print();
+for(let product of products){<br>
+product.print();<br>
+}<br>
+array[0] = '빨간색'<br>
+array[1] = '검은색'<br>
+0-빨간색<br>
+1-검은색<br>
+#### 객체 선언
+let product = {<br>
+제품명: 쿠쿠다스<br>
+유형:<br>
+성분:<br>
+원산지:<br>
 }
-
-array[0] = '빨간색'
-array[1] = '검은색'
-
-0-빨간색
-1-검은색
-
-객체 선언
-let product = {
-제품명: 쿠쿠다스
-유형:
-성분:
-원산지:
+product['제품명'] -> 쿠쿠다스<br>
+let object ={<br>
+name : '초코파이' , <br>
+price : 900 <br>
+(추가) print : function(){  <br>
+	console.log(`${this.name}의 가격은 ${this.price}원 입니다.`) <br>
+ } <br>
 }
-product['제품명'] -> 쿠쿠다스
-
-let object ={
-name : '초코파이' , 
-price : 900
-(추가) print : function(){
-	console.log(`${this.name}의 가격은 ${this.price}원 입니다.`)
- }
-}
-console.log(object.name); -> 초코파이
-console.log(object.price); -> 900
+console.log(object.name); -> 초코파이<br>
+console.log(object.price); -> 900<br>
 object.print(); -> 초코파이의 가격은 900원 입니다.
 
 ### 객체 지향 프로그래밍
 	└ 현실의 객체를 모방해서 프로그래밍 
-배열과 객체를 사용하면 여러 개의 데이트를 쉽게 다룰수 있다.
-let products ={
-{name : 'red' , price:100},
-{name : 'black' , price:300},
-{name : 'white' , price:500},
-{name : 'blue' , price:150},
-{name : 'green' , price:120}
+배열과 객체를 사용하면 여러 개의 데이트를 쉽게 다룰수 있다.<br>
+let products ={<br>
+{name : 'red' , price:100},<br>
+{name : 'black' , price:300},<br>
+{name : 'white' , price:500},<br>
+{name : 'blue' , price:150},<br>
+{name : 'green' , price:120}<br>
 }
 
 ### 생성자 함수
 객체를 만드는 함수,대문자로 시작하는 이름 사용
--생성자 함수-
+#### -생성자 함수-
 fuction Product(name,price){
 this.name=name;
 this.price=price;
 }
--생성자 함수를 사용한 객체 생성-
+#### -생성자 함수를 사용한 객체 생성-
 let product = new Product("red",100);
 console.log(product); -> name:red , price:100
 
 ### 프로토타입
 생성자 함수로 만든 객체는 프로토타입 공간에 메소드를 지어해서 모든 객체가
-공유 하도록 한다. 해당 함수를 생성자 함수로 사용시 의미가 이싿.
+공유 하도록 한다.<br>해당 함수를 생성자 함수로 사용시 의미가 있다.
 
 ## [04월 13일]
 <br>
