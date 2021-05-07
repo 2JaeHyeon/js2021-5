@@ -4,6 +4,51 @@
 #### git clone: 복사한 주소
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
 
+## [5월 4일]
+### 표준 내장 객체
+console.log(typeof number,string,boolean)<br>
+객체 자료형이 let number = new Numver(273);<br>
+console.log(typeof number);<br>
+-> object로 출력값이 나옴<br>
+<br>
+> 기본자료형과 객체 자료형 모두 속성 메소드를 사용한다.<br>
+let string = '과자|1500원';<br>
+console.log(string.split('|'));<br>
+>차이점 기본 자료형은 객체가 아니기 때문에 속성과 메소드를 추가할수가 없다.<br>
+
+Number 메소드 <br>
+toExponemtial() : 숫자를 지수 표시로 나타낸 문자열 리턴<br>
+toFixed() : 고정소수점 표시로 나타낸 문자열 리턴<br>
+-> console.log(number.toFixed(1)); : 소수점 첫째자리까지 표시<br>
+-> console.log(number.toFixed(n)); : 소수점 n번째 자리까지 표시<br>
+toPrecision() : 길이에 따라 지수표시 또는 고정 소수점 표시로 리턴<br>
+#### 생성자 함수에 속성과 메소드를 추가했을때
+function Constructor(){}<br>
+Constructor.property = 273;<br>
+Constructor.method = function () {}<br>
+-> console.log(Constructor.property) => 273<br>
+console.log(Constructor.method) =>[Function]<br>
+자바스크립트가 너무 큰 수를 다룰 때는 부동소수점 형식으로 숫자를 다루면 된다.<br>
+
+### String 객체
+let string~ = '안녕하세요';<br>
+let string~~ = new String('안녕하세요');<br>
+length = 문자열의 길이를 나타냅니다.<br>
+String 객체의 메소드는 변경된 값을 리턴하는 형식<br>
+
+#### 잘못된 String 객체 사용
+let a = 'abc';<br>
+string.toUpperCase();<br>
+console.log(a);<br>
+->abc => 자기자신을 변경하지 않고 리턴하기때문에 대문자가 아닌 소문자로 출력<br>
+#### <<올바른값>>
+string = string.toUpperCase();<br>
+console.log(string);<br>
+->ABC<br>
+indexOf() = 특정 문자열이 있는지 확인,위치를 리턴<br>
+문자열이 포함되어 있지 않을 때는 -1리턴한다.<br>
+
+
 ## [4월 27일]
 스페이스를 적용 X
 배열은 요소에 접근할 때 인덱스를 사용하고, 객체는 키를 사용<br>
