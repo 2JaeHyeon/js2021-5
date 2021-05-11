@@ -3,72 +3,107 @@
 
 #### git clone: 복사한 주소
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
+#### `${exception.name}` 은 예외가된 언어를 표시해준다
 
 ## [5월11일]
 
 #### Date
-Month '월'은 0부터 시작을한다.
-getOO() 형태 메소드,setOO()형태 메소드
+Month '월'은 0부터 시작을한다.<br>
+getOO() 형태 메소드,setOO()형태 메소드<br>
 FullYear,Month,Day,Hours,Minutes,Seconds등 사용
-getTime():유니게스타임
-일 단위(1000*60*60*24) 1000밀리초/60초/60분/24시간
+getTime():유니게스타임<br>
+일 단위(1000*60*60*24) 1000밀리초/60초/60분/24시간<br>
 <hr>
 
 #### Array
-array배열에 : 고구마/1,000원 감자/500원 바나나/1,500원이 들어가있는상태. 
-let popped = array.pop() -> 배열의 요소를 꺼냄
-console.log(popped) -> 배열에서 꺼낸 요소
-console.log(pop()) -> 메소드를 호출한 이후의 배열
-
-array.push(popped) -> 배열에 추가하기. <b>push</b>
-array.push({
-    name:'사과'
-    price:2000
-})
-console.log(array)-> 사과 값이 들어간다.
+array배열에 : 고구마/1,000원 감자/500원 바나나/1,500원이 들어가있는상태. <br>
+let popped = array.pop() -> 배열의 요소를 꺼냄<br>
+console.log(popped) -> 배열에서 꺼낸 요소<br>
+console.log(pop()) -> 메소드를 호출한 이후의 배열<br>
+<hr>
+array.push(popped) -> 배열에 추가하기. <b>push</b> <br>
+array.push({<br>
+    name:'사과'<br>
+    price:2000<br>
+})<br>
+console.log(array)-> 사과 값이 들어간다.<br>
+<hr>
 
 ##### sort() 메소드 : 배열 정렬
-
-arrayA.sort(); -> 문자열순서로 정렬
-console.log(arrayA)
-출력값 -> 감자 고구마 바나나
-console.log(arrayA.reverse()) -> 문자열로 (역순정렬)
-출력값 -> 바나나 고구마 감자
-
+arrayA.sort(); -> 문자열순서로 정렬<br>
+console.log(arrayA)<br>
+출력값 -> 감자 고구마 바나나<br>
+console.log(arrayA.reverse()) -> 문자열로 (역순정렬)<br>
+출력값 -> 바나나 고구마 감자<br>
 return -1;
 return 1;
 return 0;
+<hr>
 
 #### 콜백 함수를 매개 변수로 받을때
-[52,273,32].forEach(item,index)
-forEach() -> 배열의 요소를 하나씩 뽑아 반복적으로 돌린다.
-map() -> 콜백 함수에서 리턴하는 것을 기반으로 새로운 배열을 생성.
-filter() -> 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 생성.
+[52,273,32].forEach(item,index)<br>
+forEach() -> 배열의 요소를 하나씩 뽑아 반복적으로 돌린다.<br>
+map() -> 콜백 함수에서 리턴하는 것을 기반으로 새로운 배열을 생성.<br>
+filter() -> 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 생성.<br>
+<hr>
 
 #### 프로토타입에 메소드 추가
--> 프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가가 가능하다
-String.prototype.contain = function(input){
-    return this.indexOf(input) >= -1
-}
-메소드 활용
-console.log('안녕하세요'.contain('안녕'))
+-> 프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가가 가능하다<br>
+String.prototype.contain = function(input){<br>
+    return this.indexOf(input) >= -1<br>
+}<br>
+<strong>메소드 활용</strong><br>
+console.log('안녕하세요'.contain('안녕'))<br>
+<hr>
 
 #### underscore.js 라이브러리 설치
-npm install underscore
-<script src="http://underscorejs.org/underscore.js"></script>
-
-<div>
+npm install underscore<br>
+<script src="http://underscorejs.org/underscore.js"></script><br>
+<hr>
 
 #### JSON 객체의 메소드
-JSON.stringify(<객체>,<변환 함수>,<공백 개수>) -> 자바스크립트 객체를 문자로 생성
--> 문자열 리턴
-JSON.parse(<문자열>) -> 문자열을 자바스크립트 객체로 파싱.
--> 객체 리턴
-※ 문자열은 큰따옴표로 만든다
-※ 모든 키는 큰따옴표로 감싸야한다
-※ 숫자,문자열,불 자료형만 사용이 가능하다.
- 
-</div>
+JSON.stringify(<객체>,<변환 함수>,<공백 개수>) -> 자바스크립트 객체를 문자로 생성<br>
+-> 문자열 리턴<br>
+JSON.parse(<문자열>) -> 문자열을 자바스크립트 객체로 파싱.<br>
+-> 객체 리턴<br>
+※ 문자열은 큰따옴표로 만든다<br>
+※ 모든 키는 큰따옴표로 감싸야한다<br>
+※ 숫자,문자열,불 자료형만 사용이 가능하다.<br>
+<hr> 
+
+### 예외 처리
+예외: 실행에 문제가 발생시 자동중단.<br>
+예외처리: 오류에 대처할 수 있게 한다.<br>
+
+기본 예외 처리 : 사전에 해당 데이터가 undefined인지 조건문으로 확인.<br>
+예외 상황 확인 : 배열 생성시 길이를 음수로 지정하면 에러 발생<br>
+const array = new Array(-2000)<br>
+`${exception.name}` 은 예외가된 언어를 표시해준다<br>
+<hr>
+
+#### try catch finally 구문
+try{<br>
+    예외가 발생하면<br>
+}catch(excption){<br>
+    여기서 처리<br>
+}finally{<br>
+    이것은 무조건 실행되는 부분<br>
+}<br>
+catch구문/finally구문 생략이 가능하다.<br>
+<hr>
+try{<br>
+    error.error.error()<br>
+}catch(e){<br>
+    console.log(e.name)<br>
+    console.log(e.message)<br>
+}<br>
+예외 객체의 name과 message가 뜬다.<br>
+throw 키워드 뒤에는 문자열 또는 Error객체를 입력<br>
+const error = new Error('메시지')<br>
+error.name = ~<br>
+error.message = ~<br>
+throw error;<br>
+
 
 
 ## [5월 4일]
