@@ -4,6 +4,73 @@
 #### git clone: 복사한 주소
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
 
+## [5월11일]
+
+#### Date
+Month '월'은 0부터 시작을한다.
+getOO() 형태 메소드,setOO()형태 메소드
+FullYear,Month,Day,Hours,Minutes,Seconds등 사용
+getTime():유니게스타임
+일 단위(1000*60*60*24) 1000밀리초/60초/60분/24시간
+<hr>
+
+#### Array
+array배열에 : 고구마/1,000원 감자/500원 바나나/1,500원이 들어가있는상태. 
+let popped = array.pop() -> 배열의 요소를 꺼냄
+console.log(popped) -> 배열에서 꺼낸 요소
+console.log(pop()) -> 메소드를 호출한 이후의 배열
+
+array.push(popped) -> 배열에 추가하기. <b>push</b>
+array.push({
+    name:'사과'
+    price:2000
+})
+console.log(array)-> 사과 값이 들어간다.
+
+##### sort() 메소드 : 배열 정렬
+
+arrayA.sort(); -> 문자열순서로 정렬
+console.log(arrayA)
+출력값 -> 감자 고구마 바나나
+console.log(arrayA.reverse()) -> 문자열로 (역순정렬)
+출력값 -> 바나나 고구마 감자
+
+return -1;
+return 1;
+return 0;
+
+#### 콜백 함수를 매개 변수로 받을때
+[52,273,32].forEach(item,index)
+forEach() -> 배열의 요소를 하나씩 뽑아 반복적으로 돌린다.
+map() -> 콜백 함수에서 리턴하는 것을 기반으로 새로운 배열을 생성.
+filter() -> 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 생성.
+
+#### 프로토타입에 메소드 추가
+-> 프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가가 가능하다
+String.prototype.contain = function(input){
+    return this.indexOf(input) >= -1
+}
+메소드 활용
+console.log('안녕하세요'.contain('안녕'))
+
+#### underscore.js 라이브러리 설치
+npm install underscore
+<script src="http://underscorejs.org/underscore.js"></script>
+
+<div>
+
+#### JSON 객체의 메소드
+JSON.stringify(<객체>,<변환 함수>,<공백 개수>) -> 자바스크립트 객체를 문자로 생성
+-> 문자열 리턴
+JSON.parse(<문자열>) -> 문자열을 자바스크립트 객체로 파싱.
+-> 객체 리턴
+※ 문자열은 큰따옴표로 만든다
+※ 모든 키는 큰따옴표로 감싸야한다
+※ 숫자,문자열,불 자료형만 사용이 가능하다.
+ 
+</div>
+
+
 ## [5월 4일]
 ### 표준 내장 객체
 console.log(typeof number,string,boolean)<br>
