@@ -5,6 +5,54 @@
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
 #### `${exception.name}` 은 예외가된 언어를 표시해준다
 
+## [5월 18일]
+#### throw 키워드
+throw 키워드 뒤에는 문자열 또는 Error 객체를 입력 <br>
+throw '강제 예외';
+
+자세한 에외 출력은 Error 객체를 사용<br>
+- 어떤 파일의 몇 번째 줄에서 예외가 발생했는지도 확인가능<br>
+const error = new Error('메시지');<br>
+error.name = '내 마음대로 오류';<br>
+error.message = '오류의 메시지';<br>
+throw error; => 에러 발생<br>
+
+### 전역 변수
+__filename 현재 실행 중인 코드의 파일 경로를 나타냅니다.<br>
+__dirname 현재 실행 중인 코드의 폴더 경로를 나타냅니다.<br>
+ex> console.log(__filename/__dirname)<br>
+
+### Node.js
+env - 컴퓨터 환경 정보를 나타냅니다.<br>
+version - 버전을 나타낸다<br>
+arch - 프로세서의 아키텍처<br>
+platform - 플랫폼 나타냅니다.<br>
+
+on(<이벤트 이름>,<이벤트 핸들러>) : 이벤트를 연결합니다.<br>
+exit : 프로세스가 종료될때 발생<br>
+uncaughtException : 예외가 일어날 때 발생합니다.<br>
+
+### os 모듈
+const os = require('os'); os모듈을 추출<br>
+
+
+### url 모듈
+const url = require('url');<br>
+
+### File System 모듈
+const fs = require('fs');<br>
+fs.readFileSync(<파일이름>) : 동기적으로 파일을 읽어 들인다.<br>
+fs.readFile(<파일이름>,<콜백함수>) : 비동기적으로 파일을 읽어 들입니다.<br>
+
+<hr>
+• 웹 서버를 C++ 프로그래밍 언어로 만들면 무척 빠르지만, 개발과 유지 보수는 어려움<br>
+• 전 세계 웹 서비스 기업(페이스북, 트위터 등)도 C++로 웹 서버를 개발하지 않고 PHP, 자바, 루비, 파이썬, Node.js 등 프로그래밍 언어로 개발<br>
+• 프로그래밍 언어 자체는 느리지만 큰 의미가 없다고 판단해 개발 속도와 유지 보수성이 좋은 프로그래밍 언어를 사용<br>
+• 자바스크립트 프로그래밍 언어는 C++, 자바보다 느리지만 Node.js를 사용하면<br>
+• 손쉽게 비동기 처리를 구현하여 빠른 처리가 가능<br>
+pdf.14
+
+
 ## [5월11일]
 
 #### Date
