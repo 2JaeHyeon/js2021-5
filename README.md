@@ -5,6 +5,37 @@
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
 #### `${exception.name}` 은 예외가된 언어를 표시해준다
 
+## [5월 25일]
+### Express 모듈
+node.js기반으로 웹서버를 만들어주는 기반
+$ npm install express @4
+
+요청 메시지 : 클라이언트가 서버로 보내는 편지
+응답 메시지 : 서버가 클라이언트로 보내는 편지
+
+express() 서버 애플리케이션 객체를 생성
+app[서버] use() 요청이 왔을 때 실행할 함수를 지정
+app[서버] listen() 서버를 실행
+
+const express = require('express');
+-> 모듈의 객체 생성
+
+const app = express();
+-> 서버 생성
+
+app.use((request,response)=>{
+    response.send('<h1>Hello express</h1>);
+}) -> request 이벤트 리스너 설정
+
+app.listen*52273,()=>{
+    console.log('Server runnong at http://127.0.0.1:52273');
+});-> 서버 실행
+
+페이지 라우징 : 클라이언트 요청에 적절한 페이지를 제공하는 기술
+express 모듈의 페이지 라우팅 메소드
+#### Postman Interceptor Chrom web 스토어에서 설치
+크롬 애플리케이션 
+
 ## [5월 18일]
 #### throw 키워드
 throw 키워드 뒤에는 문자열 또는 Error 객체를 입력 <br>
