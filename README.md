@@ -5,6 +5,45 @@
 를 붙여 넣으면 그 파일의 .js파일등 코드들이 복사가됨
 #### `${exception.name}` 은 예외가된 언어를 표시해준다
 
+## [56월 01일]
+window객체 : 웹 페이지 자체를 나타낸다<br>
+새로운 화면을 열거나 웹 브라우저의 크기를 변경하는 일<br>
+대표적으로 경고 출력을 하는 경고창과 입력을 하는 프롬프트를 제공<br>
+alert(<메시지>) -> 경고창을 출력<br>
+prompt(<메시지>,<임시 글자>) -> 프롬프트를 출력<br>
+
+var input = prompt('글자를 입력해주세요','여기에 입력해주세요')<br>
+alert(input)<br>
+
+## Screen
+<table>
+[width(너비),height(높이),availWidth(실제화면 넓이),availHeight(실제 화면 높이
+),colorDepth(사용가능한 색상의수),pixelDepth(한 픽셀당 비트수)]
+</table>
+
+location객체,history객체<br>
+메소드 ><br>
+assign(<링크>) : 매개 변수로 전달한 위치로 이동<br>
+reload() : 새로고침<br>
+replace() : 매개 변수로 전달한 위치로 이동(뒤로가기 불가능)<br>
+
+### (Ex)
+location = 'http://hanbit.co.kr';
+location.href = 'http://hanbit.co.kr';
+location.assign('http://hanbit.co.kr');
+location.replace('http://hanbit.co.kr');
+
+### history객체 메소드
+forward() : 앞으로 이동
+back() : 뒤로이동
+
+### navigator 객체
+웹 페이지를 실행하는 웹 브라우저 정보가 들어있음
+사용자의 웹 브라우저,운영체제를 구분가능
+
+
+
+
 ## [5월 25일]
 ### Express 모듈
 node.js기반으로 웹서버를 만들어주는 기반
