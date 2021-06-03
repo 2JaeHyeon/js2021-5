@@ -17,11 +17,11 @@ alert(input)<br>
 
 ## Screen
 <table>
-[width(너비),
-height(높이),
-availWidth(실제화면 넓이),
-availHeight(실제 화면 높이),
-colorDepth(사용가능한 색상의수),
+[width(너비),<br>
+height(높이),<br>
+availWidth(실제화면 넓이),<br>
+availHeight(실제 화면 높이),<br>
+colorDepth(사용가능한 색상의수),<br>
 pixelDepth(한 픽셀당 비트수)]
 </table>
 
