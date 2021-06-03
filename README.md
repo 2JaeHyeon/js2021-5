@@ -17,8 +17,12 @@ alert(input)<br>
 
 ## Screen
 <table>
-[width(너비),height(높이),availWidth(실제화면 넓이),availHeight(실제 화면 높이
-),colorDepth(사용가능한 색상의수),pixelDepth(한 픽셀당 비트수)]
+[width(너비),
+height(높이),
+availWidth(실제화면 넓이),
+availHeight(실제 화면 높이),
+colorDepth(사용가능한 색상의수),
+pixelDepth(한 픽셀당 비트수)]
 </table>
 
 location객체,history객체<br>
@@ -28,41 +32,40 @@ reload() : 새로고침<br>
 replace() : 매개 변수로 전달한 위치로 이동(뒤로가기 불가능)<br>
 
 ### (Ex)
-location = 'http://hanbit.co.kr';
-location.href = 'http://hanbit.co.kr';
-location.assign('http://hanbit.co.kr');
-location.replace('http://hanbit.co.kr');
+location = 'http://hanbit.co.kr';<br>
+location.href = 'http://hanbit.co.kr';<br>
+location.assign('http://hanbit.co.kr');<br>
+location.replace('http://hanbit.co.kr');<br>
 
 ### history객체 메소드
-forward() : 앞으로 이동
-back() : 뒤로이동
+forward() : 앞으로 이동<br>
+back() : 뒤로이동<br>
 
 ### navigator 객체
-웹 페이지를 실행하는 웹 브라우저 정보가 들어있음
-사용자의 웹 브라우저,운영체제를 구분가능
+웹 페이지를 실행하는 웹 브라우저 정보가 들어있음<br>
+사용자의 웹 브라우저,운영체제를 구분가능<br>
 
 ### 문서 객체 모델
-문서 객체 : HTML 태그를 자바스크립트에서 사용할 수 있는 객체로 만든다
-    >문서 객체를 조작한다는 말은 태그를 조작한다는 말과 같다
-    >노드 : 각요소
+문서 객체 : HTML 태그를 자바스크립트에서 사용할 수 있는 객체로 만든다<br>
+    >문서 객체를 조작한다는 말은 태그를 조작한다는 말과 같다<br>
+    >노드 : 각요소<br>
 
-넓은 의미 > 웹 브라우저가 HTML 페이지를 인식하는 방법
-좁은 의미 > document 객체와 관련된 객체의 집합을 나타냄
+넓은 의미 > 웹 브라우저가 HTML 페이지를 인식하는 방법<br>
+좁은 의미 > document 객체와 관련된 객체의 집합을 나타냄<br>
 
-'정적으로 문서 객체를 생성한다'
-웹 페이지를 처음 실행할 때 html 페이지에 있는 태그를 읽으면서 생성
-'동적으로 문서 객체를 생성'
-자바스크립트를 사용해 프로그램 실행 중에 문서 객체를 생성
+'정적으로 문서 객체를 생성한다'<br>
+웹 페이지를 처음 실행할 때 html 페이지에 있는 태그를 읽으면서 생성<br>
+'동적으로 문서 객체를 생성'<br>
+자바스크립트를 사용해 프로그램 실행 중에 문서 객체를 생성<br>
 
-문서 객체 선택
->html태그를 자바스크립트에서 문서 객체로 변환
->문서 객체를 선택하면 자바스크립트로 실행 중에 내부 글자를 변경하거나 스타일 변경가능 
-
-script 태그를 읽을 때 h1,h2 태그가 생성되어있지 않으면 오류가 발생한다.
+문서 객체 선택<br>
+>html태그를 자바스크립트에서 문서 객체로 변환<br>
+>문서 객체를 선택하면 자바스크립트로 실행 중에 내부 글자를 변경하거나 스타일 변경가능 <br>
+script 태그를 읽을 때 h1,h2 태그가 생성되어있지 않으면 오류가 발생한다.<br>
 
 ### 속성조작
-setAttribute(속성이름.속성값) -> 속성을 지정
-getAttribute(속성이름) -> 속성을 추출
+setAttribute(속성이름.속성값) -> 속성을 지정<br>
+getAttribute(속성이름) -> 속성을 추출<br>
 
 ### 이벤트
 이벤트 속성 : onload
@@ -71,11 +74,11 @@ getAttribute(속성이름) -> 속성을 추출
 이벤트 모델 : 문서 객체에 이벤트를 연결하는 방법
 
 ### jQuery
-객체 탐색 메소드 
-parent() -> 부모 태그를 선택
-find() -> 후손 태그를 찾음
-$('h1').parent(); -> h1 태그의 부모 태그를 선택
-$('h1').find('i') -> h1 태그 내부에 있는 i 태그 선택
+객체 탐색 메소드 <br>
+parent() -> 부모 태그를 선택<br>
+find() -> 후손 태그를 찾음<br>
+$('h1').parent(); -> h1 태그의 부모 태그를 선택<br>
+$('h1').find('i') -> h1 태그 내부에 있는 i 태그 선택<br>
 <hr>
 length 선택된 문서 객체의 수를 구한다.
 get() 선택한 문서 객체 중 하나를 선택
@@ -86,9 +89,8 @@ html() html태그 내부의 문자를 조작<br>
 $('h1').text()<br>
 $('h1').html()<br>
 <hr>
-css() -> 스타일을 조작
-attr() -> 속성을 조작
-
+css() -> 스타일을 조작<br>
+attr() -> 속성을 조작<br>
 
 
 ## [5월 25일]
